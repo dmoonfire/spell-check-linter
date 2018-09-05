@@ -1,0 +1,29 @@
+{
+  "name": "spell-check-linter",
+  "main": "./lib/spell-check-linter",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "repository": "https://github.com/atom/spell-check-linter",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  },
+  "providedServices": {
+    "spell-check-status": {
+      "versions": {
+        "1.0.0": "provideSpellCheckStatus"
+      }
+    }
+  },
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  }
+}
